@@ -41,7 +41,7 @@ function Hero() {
         />
 
         <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2">
-          <div className="animate-bounce text-red-500 text-2xl">↓</div>
+          <div className="animate-bounce text-red-500 text-3xl font-bold">↓</div>
         </div>
       </div>
 

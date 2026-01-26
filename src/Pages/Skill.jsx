@@ -26,6 +26,11 @@ const skills = [
     level:50,
     image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2ZYtHv2OLXmthRPbkmENZRXuqBVDwlsrZ1A&s",
   },
+  {
+    name:"Php",
+    level:75,
+    image:"https://www.php.net/images/meta-image.png",
+  }
 ];
 
 function Skill() {
