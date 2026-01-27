@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Background from "../animatte/Background";
 
 function Hero() {
   const fullText = "Hello, I'm Vibol";
@@ -11,7 +12,7 @@ function Hero() {
       const timer = setTimeout(() => {
         setDisplayedText((prev) => prev + fullText[index]);
         setIndex(index + 1);
-      }, 50); // 0.05s per character, faster
+      }, 50);
 
       return () => clearTimeout(timer);
     }
@@ -19,8 +20,9 @@ function Hero() {
 
   return (
     <section className="h-screen flex flex-col items-center justify-center bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 relative overflow-hidden">
+      <Background/>
       <div className="text-center px-4">
-        {/* Animated Text */}
+       
         <h1 className="text-3xl md:text-6xl text-red-500 font-bold">
           {displayedText}
           <span className="blinking-cursor">|</span>

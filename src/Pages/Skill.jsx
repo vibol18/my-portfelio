@@ -44,7 +44,6 @@ function Skill() {
           key={index}
           className="mb-6 bg-gray-800 p-4 rounded-lg shadow"
         >
-          {/* Title Row */}
           <div className="flex items-center gap-4 mb-2">
             <img
               src={skill.image}
@@ -58,7 +57,7 @@ function Skill() {
                 <span>{skill.level}%</span>
               </div>
 
-              {/* Progress Bar */}
+              
               <div className="w-full bg-gray-700 h-3 rounded mt-2">
                 <div
                   className="bg-blue-500 h-3 rounded transition-all duration-500"

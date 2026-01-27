@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import AnimatedText from '../animatte/AnimatedText'
+import { motion } from 'motion/react'
 
 function Navbar() {
     const [open,setOpen] = useState(false)
@@ -33,6 +34,7 @@ function Navbar() {
           <a onClick={() => setOpen(false)} href="#skill">Skill</a>
           <a onClick={() => setOpen(false)} href="#project">Project</a>
           <a onClick={() => setOpen(false)} href="#contact">Contact</a>
+         
         </div>
       </div>
     </nav>

@@ -58,7 +58,7 @@ export default function ProjectSlider() {
         ref={scrollRef}
         className="flex gap-4 overflow-x-auto scrollbar-hide px-4"
       >
-        {/* Duplicate projects for seamless loop */}
+      
         {[...projects, ...projects].map((project, index) => (
           <div
             key={index}
