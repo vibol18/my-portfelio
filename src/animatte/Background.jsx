@@ -9,7 +9,7 @@ export default function Background() {
         ringRadius={7}
         waveSpeed={0.4}
         waveAmplitude={1}
-        particleSize={3}
+        particleSize={2}
         lerpSpeed={0.05}
         color="#5227FF"
         autoAnimate

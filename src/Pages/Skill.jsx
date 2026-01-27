@@ -32,6 +32,31 @@ const skills = [
     level: 75,
     image: "https://www.php.net/images/meta-image.png",
   },
+  {
+    name: "MySql",
+    level: 68,
+    image: "https://www.techspot.com/images2/downloads/topdownload/2020/01/2020-01-28-ts3_thumbs-c3e.png",
+  },
+  {
+    name: "C#",
+    level: 59,
+    image: "https://www.jetbrains.com/guide/assets/csharp-logo-265a149e.svg",
+  },
+  {
+    name: "Java",
+    level: 67,
+    image: "https://www.php.net/images/meta-image.png",
+  },
+  {
+    name: "Python",
+    level: 64,
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/250px-Python-logo-notext.svg.png",
+  },
+  {
+    name: "Jquery",
+    level: 57,
+    image: "https://miro.medium.com/0*eFomJUFua8tuqe8g.png",
+  },
 ];
 
 function Skill() {
