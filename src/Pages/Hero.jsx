@@ -30,7 +30,7 @@ function Hero() {
 
        
         <p className="text-gray-300 mt-4 text-sm md:text-lg">
-          Full Stack Developer (Laravel / Spring / Express | React / Vue.js)
+          Full Stack Developer (Laravel/ Express | React / Vue.js)
         </p>
 
         
