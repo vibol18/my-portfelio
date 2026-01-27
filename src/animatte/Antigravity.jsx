@@ -3,7 +3,7 @@ import { useEffect, useRef } from "react";
 export default function Antigravity({
   count = 200,
   color = "#5227FF",
-  particleSize = 1.5,
+  particleSize = 8,
   lerpSpeed = 0.05,
   magnetRadius = 6,
   fieldStrength = 10,

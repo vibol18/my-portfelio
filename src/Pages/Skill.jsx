@@ -1,5 +1,6 @@
 import React from "react";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
+
 const skills = [
   {
     name: "React",
@@ -22,26 +23,31 @@ const skills = [
     image: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
   },
   {
-    name:"MongoDb",
-    level:50,
-    image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2ZYtHv2OLXmthRPbkmENZRXuqBVDwlsrZ1A&s",
+    name: "MongoDB",
+    level: 50,
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2ZYtHv2OLXmthRPbkmENZRXuqBVDwlsrZ1A&s",
   },
   {
-    name:"Php",
-    level:75,
-    image:"https://www.php.net/images/meta-image.png",
-  }
+    name: "PHP",
+    level: 75,
+    image: "https://www.php.net/images/meta-image.png",
+  },
 ];
 
 function Skill() {
   return (
     <section id="skills" className="max-w-6xl mx-auto p-6">
-      <motion.ul animate={{ rotate: 360 }} className="bg-red-500"/>
-      <h2 className="text-3xl font-bold mb-8 text-center">My Skills</h2>
+      <h2 className="text-3xl font-bold mb-8 text-center">
+        My Skills
+      </h2>
 
       {skills.map((skill, index) => (
-        <div
+        <motion.div
           key={index}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4, delay: index * 0.1 }}
+          viewport={{ once: true }}
           className="mb-6 bg-gray-800 p-4 rounded-lg shadow"
         >
           <div className="flex items-center gap-4 mb-2">
@@ -52,21 +58,24 @@ function Skill() {
             />
 
             <div className="flex-1">
-              <div className="flex justify-between font-semibold">
+              <div className="flex justify-between font-semibold text-white">
                 <span>{skill.name}</span>
                 <span>{skill.level}%</span>
               </div>
 
-              
-              <div className="w-full bg-gray-700 h-3 rounded mt-2">
-                <div
-                  className="bg-blue-500 h-3 rounded transition-all duration-500"
-                  style={{ width: `${skill.level}%` }}
-                ></div>
+              {/* Progress bar */}
+              <div className="w-full bg-gray-700 h-3 rounded mt-2 overflow-hidden">
+                <motion.div
+                  initial={{ width: 0 }}
+                  whileInView={{ width: `${skill.level}%` }}
+                  transition={{ duration: 0.8, ease: "easeOut" }}
+                  viewport={{ once: true }}
+                  className="bg-blue-500 h-3 rounded"
+                />
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       ))}
     </section>
   );

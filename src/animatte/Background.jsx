@@ -4,12 +4,12 @@ export default function Background() {
   return (
     <div className="fixed inset-0 -z-10">
       <Antigravity
-        count={300}
+        count={500}
         magnetRadius={6}
         ringRadius={7}
         waveSpeed={0.4}
         waveAmplitude={1}
-        particleSize={1.5}
+        particleSize={3}
         lerpSpeed={0.05}
         color="#5227FF"
         autoAnimate
