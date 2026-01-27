@@ -14,8 +14,12 @@ function About() {
               words={[
                 'interested in Web Development',
                 'Front-End Developer',
-                'React JS Developer',
-                'Tailwind CSS'
+                'React JS ',
+                'Tailwind CSS',
+                'Vue.js',
+                'JavaScript',
+                'php,Laravel,Express',
+                ''
               ]}
               loop={0}
               cursor

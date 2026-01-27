@@ -1,5 +1,5 @@
 import React from "react";
-
+import { motion } from "motion/react";
 const skills = [
   {
     name: "React",
@@ -36,6 +36,7 @@ const skills = [
 function Skill() {
   return (
     <section id="skills" className="max-w-6xl mx-auto p-6">
+      <motion.ul animate={{ rotate: 360 }} className="bg-red-500"/>
       <h2 className="text-3xl font-bold mb-8 text-center">My Skills</h2>
 
       {skills.map((skill, index) => (
