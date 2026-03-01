@@ -211,13 +211,13 @@ function App() {
       {
         category: "Database",
         icon: Database,
-        items: ["MongoDB", "MySQL","Laragon"],
+        items: ["MongoDB",PostgresSQL, "MySQL","Laragon"],
         color: "from-green-500 to-emerald-500",
       },
       {
         category: "DevOps",
         icon: Terminal,
-        items: ["Git", "GitHub", "GitHub Actions",],
+        items: ["Git", "GitHub", "GitHub Actions","Docker"],
         color: "from-indigo-500 to-purple-500",
       },
       {
