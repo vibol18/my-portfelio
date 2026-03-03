@@ -477,7 +477,7 @@ function App() {
                   {/* Profile image */}
                   <div className="absolute inset-4 rounded-full overflow-hidden border-4 border-blue-500/20 shadow-2xl shadow-blue-500/50">
                     <img
-                      src="https://vibol18.github.io/mitchacademytwo/IMG_9467.JPG"
+                      src="https://avatars.githubusercontent.com/u/207806954?s=400&u=a22d05cf6ea6df1aad9b1e3a46f87d5b92b8d299&v=4"
                       alt="Profile"
                       className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
                     />
