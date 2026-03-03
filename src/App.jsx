@@ -211,7 +211,7 @@ function App() {
       {
         category: "Database",
         icon: Database,
-        items: ["MongoDB",PostgresSQL, "MySQL","Laragon",],
+        items: ["MongoDB","PostgresSQL", "MySQL","Laragon",],
         color: "from-green-500 to-emerald-500",
       },
       {
